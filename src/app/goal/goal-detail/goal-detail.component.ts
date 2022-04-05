@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
+import { Goal } from 'src/app/goal';
 @Component({
   selector: 'app-goal-detail',
   templateUrl: './goal-detail.component.html',
@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoalDetailComponent implements OnInit {
 
+  @Input() goal: Goal = new Goal;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  goalComplete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
   constructor() { }
 
   ngOnInit(): void {
