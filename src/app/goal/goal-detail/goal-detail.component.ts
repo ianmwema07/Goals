@@ -9,10 +9,11 @@ export class GoalDetailComponent implements OnInit {
 
   @Input() goal: Goal = new Goal(4,"Solve math Homework", "I have to try these sums", new Date(2030,3,14));
   @Output() isComplete = new EventEmitter<boolean>();
-
-  goalComplete(complete:boolean){
+ 
+  goalDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
+
   constructor() { }
 
   ngOnInit(): void {
