@@ -7,7 +7,7 @@ import { Goal } from 'src/app/goal';
 })
 export class GoalDetailComponent implements OnInit {
 
-  @Input() goal: Goal = new Goal;
+  @Input() goal: Goal = new Goal(4,"Solve math Homework", "I have to try these sums", new Date(2030,3,14));
   @Output() isComplete = new EventEmitter<boolean>();
 
   goalComplete(complete:boolean){
