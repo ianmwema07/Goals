@@ -10,10 +10,10 @@ export class GoalComponent implements OnInit {
 
   goals:Goal[] = [
     
-    new Goal(1,"Watch finding Nemo","Well this has been advertised over and over again in main stream media", new Date(2015,3,14)),
-    new Goal(2,"Buy Cookies", "There are these Brown cookies that I'd like to try out", new Date(2010,3,14)),
-    new Goal(3,"Get new Phone case", "The way things are going I will destroy this phone", new Date(2000,3,14)),
-    new Goal(4,"Solve math Homework", "I have to try these sums", new Date(2020,3,14)),
+    new Goal(1,"Watch finding Nemo","Well this has been advertised over and over again in main stream media", new Date(2023,3,14)),
+    new Goal(2,"Buy Cookies", "There are these Brown cookies that I'd like to try out", new Date(2022,3,14)),
+    new Goal(3,"Get new Phone case", "The way things are going I will destroy this phone", new Date(2030,3,14)),
+    new Goal(4,"Solve math Homework", "I have to try these sums", new Date(2045,3,14)),
   ];
 
 
