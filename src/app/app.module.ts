@@ -9,6 +9,7 @@ import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 import { FormsModule } from '@angular/forms';
+import { GoalService } from './goal-service/goal.service';
 
 @NgModule({
   declarations: [
